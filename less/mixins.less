@@ -1,1 +1,16 @@
 // Mixins in here
+.center(){
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-function(@bg-color:@button-bg, @width:220px, @font-color:@white){
+    background-color: @bg-color;
+    width: @width;
+    color: @font-color;
+    font-size: 2rem;
+    border-radius: 10px;
+    height: 50px;
+    .center();    
+}
